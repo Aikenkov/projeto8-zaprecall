@@ -2,8 +2,12 @@
 
 export default function App() {
     return (
-        <div>
-            <h1> Hello world!</h1>
-        </div>
+        <>
+            <div className="home-screen">
+                <img src="../assets/img/logo.png" />
+                <h1>ZapRecall</h1>
+                <div>Iniciar Recall!</div>
+            </div>
+        </>
     )
 }
