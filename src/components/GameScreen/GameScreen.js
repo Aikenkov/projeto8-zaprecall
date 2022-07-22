@@ -1,6 +1,7 @@
 
 import "./style.css";
 import logo from "../assets/img/logo.png"
+import setinha from "../assets/img/setinha.png"
 
 
 const deck = [
@@ -60,24 +61,27 @@ function TemplateQuestion({ question, answer, index }) {
     return (
         <>
             <div>
-                <div className='question '>
+                <div className='question hidden'>
                     <h2>Pergunta {index + 1}</h2>
                     <ion-icon name="play-outline"></ion-icon>
                 </div>
                 <div>
-                    {/*  <div>
+                    <div className="zap-box">
                         <p>
                             {question}
                         </p>
+                        <img alt='setinha' src={setinha} />
                     </div>
-                    <div>
+                    <div className="answer-box zap-box hidden">
                         <p>
                             {answer}
                         </p>
                         <div>
-
+                            <button>Não lembrei </button>
+                            <button>Quase não lembrei</button>
+                            <button>Zap!</button>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </>
