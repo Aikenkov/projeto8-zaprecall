@@ -1,4 +1,4 @@
-
+import React from "react";
 import "./style.css";
 import logo from "../assets/img/logo.png"
 import setinha from "../assets/img/setinha.png"
@@ -57,32 +57,37 @@ function createlist() {
 createlist()
 
 function TemplateQuestion({ question, answer, index }) {
+    const [flesh, setFlesh] = React.useState(true);
+
 
     return (
         <>
             <div>
-                <div className='question hidden'>
-                    <h2>Pergunta {index + 1}</h2>
-                    <ion-icon name="play-outline"></ion-icon>
-                </div>
-                <div>
-                    <div className="zap-box">
-                        <p>
-                            {question}
-                        </p>
-                        <img alt='setinha' src={setinha} />
+                {flesh ? (
+                    <div className='question'>
+                        <h2>Pergunta {index + 1}</h2>
+                        <ion-icon name="play-outline"></ion-icon>
                     </div>
-                    <div className="answer-box zap-box hidden">
-                        <p>
-                            {answer}
-                        </p>
-                        <div>
-                            <button>Não lembrei </button>
-                            <button>Quase não lembrei</button>
-                            <button>Zap!</button>
+                ) : (
+                    <div>
+                        <div className="zap-box">
+                            <p>
+                                {question}
+                            </p>
+                            <img alt='setinha' src={setinha} />
+                        </div>
+                        <div className="answer-box zap-box ">
+                            <p>
+                                {answer}
+                            </p>
+                            <div className="buttons">
+                                <button>Não lembrei </button>
+                                <button>Quase não lembrei</button>
+                                <button>Zap!</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                )}
             </div>
         </>
     )

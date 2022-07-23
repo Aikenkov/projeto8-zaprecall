@@ -3,14 +3,15 @@ import "./style.css"
 import logo from "../assets/img/logo.png"
 
 
-export default function HomeScreen() {
-    const [initial, setInitial] = React.useState("home-screen hidden")
+
+export default function HomeScreen({ setScreen, screen }) {
+
     return (
         <>
-            <div className={initial}>
+            <div className="home-screen">
                 <img alt="ixi" src={logo} />
                 <h1>ZapRecall</h1>
-                <div onClick={() => setInitial("hidden")}>Iniciar Recall!</div>
+                <div onClick={() => setScreen(!screen)}>Iniciar Recall!</div>
             </div>
         </>
     )

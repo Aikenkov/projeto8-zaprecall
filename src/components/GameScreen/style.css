@@ -2,7 +2,8 @@
 .game-screen> :nth-child(1),
 .question,
 .scoreboard,
-.questions {
+.questions,
+.buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +17,8 @@
 }
 
 .game-screen> :nth-child(1) {
-    margin-bottom: 5vh;
+    margin-bottom: 31px;
+    margin-top: 30px;
 }
 
 .game-screen> :nth-child(1) img {
@@ -32,9 +34,10 @@
 
 .question {
     justify-content: space-between;
+    box-sizing: border-box;
     background-color: #FFFFFF;
     width: 80vw;
-    height: 10vh;
+    height: 65px;
     border-radius: 5px;
     padding: 0 22px;
     margin-top: 22px;
@@ -54,12 +57,12 @@
 
 .questions {
     flex-direction: column;
-    margin-bottom: 70px;
+    margin-bottom: 130px;
 }
 
 .scoreboard {
     width: 100%;
-    height: 11vh;
+    min-height: 70px;
     background-color: #FFFFFF;
     box-sizing: border-box;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
@@ -78,8 +81,7 @@
     font-family: Recursive;
     box-sizing: border-box;
     font-size: 18px;
-    word-break: break-all;
-    height: 131px;
+    min-height: 131px;
     width: 80vw;
     border-radius: 5px;
     margin-top: 22px;
@@ -103,5 +105,28 @@
     border: none;
     color: #FFFFFF;
     font-size: 12px;
+    background-color: #2FBE34;
+}
+
+
+.answer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons {
+    justify-content: space-between;
+}
+
+.buttons> :nth-child(1) {
+    background-color: #FF3030;
+}
+
+.buttons> :nth-child(2) {
+    background-color: #FF922E;
+}
+
+.buttons> :nth-child(3) {
     background-color: #2FBE34;
 }
