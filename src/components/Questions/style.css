@@ -93,15 +93,7 @@ ion-icon[name="help-circle"] {
     width: 30px;
 }
 
-.zap-box button {
-    width: 30%;
-    height: 37px;
-    border-radius: 5px;
-    border: none;
-    color: #FFFFFF;
-    font-size: 12px;
-    background-color: #2FBE34;
-}
+
 
 
 .answer-box {
@@ -109,6 +101,15 @@ ion-icon[name="help-circle"] {
     flex-direction: column;
     justify-content: space-between;
     transform: rotateY(180deg);
+}
+
+.buttons button {
+    width: 30%;
+    height: 37px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 12px;
 }
 
 .buttons {

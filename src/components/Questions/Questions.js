@@ -46,7 +46,7 @@ function random() {
 
 
 
-function TemplateQuestion({ question, answer, index, playCount, setPlayCount, mistakesCount, setMistakesCount, linePlays, setLinePlays }) {
+function TemplateQuestion({ question, answer, index, playCount, setPlayCount, mistakes, setMistakes, linePlays, setLinePlays }) {
     const [flesh, setFlesh] = React.useState(true);
     const [isOpen, setIsOpen] = React.useState(false);
     const [answerClass, setAnswerClass] = React.useState("answer-box zap-box hidden");
@@ -70,26 +70,25 @@ function TemplateQuestion({ question, answer, index, playCount, setPlayCount, mi
     function choice(color) {
         setFlesh(!flesh);
         setPlayCount(playCount + 1)
+
+
         if (color === "red") {
             setClosedQuest(`question ${color}`)
             setIconName("close-circle")
-            setMistakesCount(mistakesCount + 1)
             setLinePlays([...linePlays, { name: "close-circle" }])
+            setMistakes(mistakes + 1)
         }
         if (color === "yellow") {
             setClosedQuest(`question ${color}`)
             setIconName("help-circle")
             setLinePlays([...linePlays, { name: "help-circle" }])
-
         }
         if (color === "green") {
             setClosedQuest(`question ${color}`)
             setIconName("checkmark-circle")
             setLinePlays([...linePlays, { name: "checkmark-circle" }])
-
         }
     }
-
 
     return (
         <>
@@ -125,7 +124,7 @@ function TemplateQuestion({ question, answer, index, playCount, setPlayCount, mi
 }
 
 
-export default function Questions({ playCount, setPlayCount, mistakesCount, setMistakesCount, linePlays, setLinePlays }) {
+export default function Questions({ playCount, setPlayCount, mistakes, setMistakes, linePlays, setLinePlays }) {
     questions.sort(random)
     return (
         <div className="questions">
@@ -138,8 +137,8 @@ export default function Questions({ playCount, setPlayCount, mistakesCount, setM
                             answer={item.answer}
                             playCount={playCount}
                             setPlayCount={setPlayCount}
-                            mistakesCount={mistakesCount}
-                            setMistakesCount={setMistakesCount}
+                            mistakes={mistakes}
+                            setMistakes={setMistakes}
                             linePlays={linePlays}
                             setLinePlays={setLinePlays} />
                     )

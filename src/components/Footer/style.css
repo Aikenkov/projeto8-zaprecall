@@ -1,4 +1,5 @@
-.scoreboard {
+.scoreboard,
+.result {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +31,7 @@
 .scoreboard ion-icon {
     margin-right: 4px;
     font-size: 24px;
+    margin-top: 5px;
 }
 
 .scoreboard p {
@@ -37,5 +39,9 @@
     font-size: 18px;
     max-width: 222px;
     text-align: center;
-    padding: 4PX;
+    padding: 9px;
+}
+
+.result {
+    padding: 9px;
 }
