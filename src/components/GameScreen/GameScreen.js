@@ -9,7 +9,8 @@ import Footer from "../Footer/Footer";
 
 export default function GameScreen() {
     const [playCount, setPlayCount] = React.useState(0);
-
+    const [mistakesCount, setMistakesCount] = React.useState(0);
+    const lineplays = []
     return (
         <>
             <div className='game-screen'>
@@ -18,10 +19,14 @@ export default function GameScreen() {
                     <h1>ZapRecall</h1>
                 </div>
 
-                <Questions />
+                <Questions
+                    playCount={playCount}
+                    setPlayCount={setPlayCount}
+                    mistakesCount={mistakesCount}
+                    setMistakesCount={setMistakesCount} />
             </div>
 
-            <Footer />
+            <Footer playCount={playCount} />
         </>
     )
 }

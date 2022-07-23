@@ -2,20 +2,19 @@ import "./style.css";
 import React from "react";
 
 
-function FooterTemplate() {
+function FooterTemplate({ playCount }) {
 
     return (
         <div className='scoreboard'>
-            <h3>0/4 CONCLUÍDOS</h3>
+            <h3>{playCount}/4 CONCLUÍDOS</h3>
             <div>aiai</div>
         </div>
-
     )
 }
 
-export default function Footer() {
+export default function Footer({ playCount }) {
     return (
-        <FooterTemplate />
+        <FooterTemplate playCount={playCount} />
     )
 }
 

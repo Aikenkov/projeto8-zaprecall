@@ -45,7 +45,8 @@ function random() {
 }
 
 
-function TemplateQuestion({ question, answer, index }) {
+
+function TemplateQuestion({ question, answer, index, playCount, setPlayCount, mistakesCount, setMistakesCount }) {
     const [flesh, setFlesh] = React.useState(true);
     const [isOpen, setIsOpen] = React.useState(false);
     const [answerClass, setAnswerClass] = React.useState("answer-box zap-box hidden");
@@ -68,10 +69,11 @@ function TemplateQuestion({ question, answer, index }) {
 
     function choice(color) {
         setFlesh(!flesh);
-
+        setPlayCount(playCount + 1)
         if (color === "red") {
             setClosedQuest(`question ${color}`)
             setIconName("close-circle")
+            setMistakesCount(mistakesCount + 1)
         }
         if (color === "yellow") {
             setClosedQuest(`question ${color}`)
@@ -118,14 +120,21 @@ function TemplateQuestion({ question, answer, index }) {
 }
 
 
-export default function Questions({ playCount }) {
+export default function Questions({ playCount, setPlayCount, mistakesCount, setMistakesCount }) {
     questions.sort(random)
     return (
         <div className="questions">
             {questions.map((item, index) => {
                 if (index < 4) {
                     return (
-                        <TemplateQuestion index={index} key={index} question={item.question} answer={item.answer} />
+                        <TemplateQuestion index={index}
+                            key={index}
+                            question={item.question}
+                            answer={item.answer}
+                            playCount={playCount}
+                            setPlayCount={setPlayCount}
+                            mistakesCount={mistakesCount}
+                            setMistakesCount={setMistakesCount} />
                     )
                 }
             })}
