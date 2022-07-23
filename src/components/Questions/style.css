@@ -1,0 +1,128 @@
+.question,
+.scoreboard,
+.questions,
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    width: 80vw;
+    height: 65px;
+    border-radius: 5px;
+    padding: 0 22px;
+    margin-top: 22px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.question h2 {
+    font: Recursive;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.question ion-icon {
+    font-size: 30px;
+    color: #1a1a1a;
+}
+
+.question ion-icon,
+.zap-box img {
+    cursor: pointer;
+}
+
+
+.questions {
+    flex-direction: column;
+    margin-bottom: 130px;
+}
+
+.red,
+.yellow,
+.green {
+    text-decoration: line-through;
+}
+
+.red,
+ion-icon[name="close-circle"] {
+    color: #FF3030;
+}
+
+.green,
+ion-icon[name="checkmark-circle"] {
+    color: #2FBE34;
+}
+
+.yellow,
+ion-icon[name="help-circle"] {
+    color: #FF922E;
+}
+
+.card {
+    transform-style: preserve-3d;
+
+    transition: all 200ms linear;
+}
+
+.turn {
+    transform: rotateY(180deg);
+}
+
+.zap-box {
+    font-family: Recursive;
+    box-sizing: border-box;
+    font-size: 18px;
+    min-height: 131px;
+    width: 80vw;
+    border-radius: 5px;
+    margin-top: 22px;
+    padding: 18px 15px 6px;
+    background-color: #FFFFD4;
+    position: relative;
+}
+
+.zap-box img {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    height: 20px;
+    width: 30px;
+}
+
+.zap-box button {
+    width: 30%;
+    height: 37px;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    background-color: #2FBE34;
+}
+
+
+.answer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: rotateY(180deg);
+}
+
+.buttons {
+    justify-content: space-between;
+}
+
+.buttons> :nth-child(1) {
+    background-color: #FF3030;
+}
+
+.buttons> :nth-child(2) {
+    background-color: #FF922E;
+}
+
+.buttons> :nth-child(3) {
+    background-color: #2FBE34;
+}

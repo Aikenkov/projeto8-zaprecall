@@ -1,7 +1,6 @@
 .game-screen,
 .game-screen> :nth-child(1),
 .question,
-.scoreboard,
 .questions,
 .buttons {
     display: flex;
@@ -30,103 +29,4 @@
 .game-screen> :nth-child(1) h1 {
     font-size: 36px;
     color: #ffffff;
-}
-
-.question {
-    justify-content: space-between;
-    box-sizing: border-box;
-    background-color: #FFFFFF;
-    width: 80vw;
-    height: 65px;
-    border-radius: 5px;
-    padding: 0 22px;
-    margin-top: 22px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-}
-
-.question h2 {
-    font: Recursive;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-.question ion-icon {
-    font-size: 30px;
-    color: #1a1a1a;
-}
-
-.questions {
-    flex-direction: column;
-    margin-bottom: 130px;
-}
-
-.scoreboard {
-    width: 100%;
-    min-height: 70px;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
-
-.scoreboard h3 {
-    font-weight: 400;
-    font-family: Recursive;
-    font-size: 18px;
-}
-
-.zap-box {
-    font-family: Recursive;
-    box-sizing: border-box;
-    font-size: 18px;
-    min-height: 131px;
-    width: 80vw;
-    border-radius: 5px;
-    margin-top: 22px;
-    padding: 18px 15px 6px;
-    background-color: #FFFFD4;
-    position: relative;
-}
-
-.zap-box img {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    height: 20px;
-    width: 30px;
-}
-
-.zap-box button {
-    width: 30%;
-    height: 37px;
-    border-radius: 5px;
-    border: none;
-    color: #FFFFFF;
-    font-size: 12px;
-    background-color: #2FBE34;
-}
-
-
-.answer-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.buttons {
-    justify-content: space-between;
-}
-
-.buttons> :nth-child(1) {
-    background-color: #FF3030;
-}
-
-.buttons> :nth-child(2) {
-    background-color: #FF922E;
-}
-
-.buttons> :nth-child(3) {
-    background-color: #2FBE34;
 }

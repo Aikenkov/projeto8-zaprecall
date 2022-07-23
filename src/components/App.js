@@ -5,7 +5,7 @@ import "./assets/CSS/reset.css"
 import "./assets/CSS/style.css"
 
 export default function App({ }) {
-    const [screen, setScreen] = React.useState(true);
+    const [screen, setScreen] = React.useState(false); //trocar para true na hora de testar projeto
 
     return (
         <>
