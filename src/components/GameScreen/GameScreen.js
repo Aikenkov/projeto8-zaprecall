@@ -10,7 +10,8 @@ import Footer from "../Footer/Footer";
 export default function GameScreen() {
     const [playCount, setPlayCount] = React.useState(0);
     const [mistakesCount, setMistakesCount] = React.useState(0);
-    const lineplays = []
+    const [linePlays, setLinePlays] = React.useState([]);
+
     return (
         <>
             <div className='game-screen'>
@@ -23,10 +24,16 @@ export default function GameScreen() {
                     playCount={playCount}
                     setPlayCount={setPlayCount}
                     mistakesCount={mistakesCount}
-                    setMistakesCount={setMistakesCount} />
+                    setMistakesCount={setMistakesCount}
+                    linePlays={linePlays}
+                    setLinePlays={setLinePlays}
+                />
             </div>
 
-            <Footer playCount={playCount} />
+            <Footer
+                playCount={playCount}
+                linePlays={linePlays}
+            />
         </>
     )
 }
