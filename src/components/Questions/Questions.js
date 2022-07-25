@@ -25,7 +25,7 @@ const deck = [
     },
     {
         question: "Usamos o npm para __ ",
-        answer: "Usamos o npm para __ ",
+        answer: "gerenciar os pacotes necessários e suas dependências",
     },
     {
         question: "Usamos props para __",
@@ -39,6 +39,7 @@ const deck = [
 
 
 let questions = [...deck];
+questions.sort(random);
 
 function random() {
     return Math.random() - 0.5;
@@ -125,7 +126,6 @@ function TemplateQuestion({ question, answer, index, playCount, setPlayCount, mi
 
 
 export default function Questions({ playCount, setPlayCount, mistakes, setMistakes, linePlays, setLinePlays }) {
-    questions.sort(random)
     return (
         <div className="questions">
             {questions.map((item, index) => {

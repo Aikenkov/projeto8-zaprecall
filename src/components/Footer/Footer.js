@@ -6,7 +6,7 @@ import putz from "../assets/img/sad-7.png"
 
 function FooterTemplate({ playCount, linePlays, mistakes }) {
 
-    if (playCount === 4 && mistakes == 0) {
+    if (playCount === 4 && mistakes === 0) {
 
         return (
             <div className='scoreboard'>

@@ -73,9 +73,7 @@ ion-icon[name="help-circle"] {
 }
 
 .zap-box {
-    font-family: Recursive;
     box-sizing: border-box;
-    font-size: 18px;
     min-height: 131px;
     width: 80vw;
     border-radius: 5px;
@@ -83,6 +81,13 @@ ion-icon[name="help-circle"] {
     padding: 18px 15px 6px;
     background-color: #FFFFD4;
     position: relative;
+}
+
+.zap-box p {
+    font-family: Recursive;
+    padding-bottom: 15px;
+    font-size: 18px;
+
 }
 
 .zap-box img {
@@ -104,6 +109,7 @@ ion-icon[name="help-circle"] {
 }
 
 .buttons button {
+    font-family: Recursive;
     width: 30%;
     height: 37px;
     border-radius: 5px;
