@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Projeto8 - ZapRecall
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto "projeto8-zaprecall" é uma aplicação de mini jogo de flash cards. Foi desenvolvido com o propósito de aprendizado utilizando HTML, CSS e ReactJS. O objetivo principal do projeto foi explorar a construção de interfaces utilizando ReactJS e criar interfaces interativas com animações em CSS. Neste jogo, os usuários podem testar sua memória respondendo perguntas em cartões e recebendo uma pontuação no final.
 
-## Available Scripts
+## Descrição do Projeto
 
-In the project directory, you can run:
+O ZapRecall é um mini jogo de flash cards interativo. Ao iniciar o jogo, o usuário se depara com um cartão contendo uma pergunta. Após visualizar a pergunta, o usuário pode escolher entre três opções: "Não lembrei", "Quase não lembrei" e "Zap!". Com base na opção escolhida, o jogo avalia a resposta e atribui uma pontuação ao jogador.
 
-### `npm start`
+A interface do jogo é construída utilizando ReactJS, permitindo uma experiência de usuário dinâmica e interativa. Além disso, foram adicionadas animações em CSS para tornar a transição entre os cartões mais suave e agradável.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Utilização do Projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para visualizar o projeto, acesse o seguinte link do Vercel: [Projeto8-ZapRecall](https://projeto8-zaprecall-neon.vercel.app)
 
-### `npm test`
+Certifique-se de ter um navegador web atualizado para uma experiência ideal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Recursos Utilizados
 
-### `npm run build`
+- HTML
+- CSS
+- ReactJS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Conclusão
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O ZapRecall é uma aplicação divertida que permite aos usuários testarem sua memória através de flash cards interativos. Ao construir este projeto com ReactJS, pude aprimorar minhas habilidades de construção de interfaces, além de adicionar animações em CSS para tornar a experiência mais atraente. Espero que você se divirta jogando e desafiando sua memória!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
